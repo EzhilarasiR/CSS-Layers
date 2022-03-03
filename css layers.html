@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>css layers</title>
+</head>
+<style>
+
+div
+{
+width:100px;
+height:100px;
+position:relative;
+}
+.infront {
+background-color:red;
+font-size:20px;
+font-weight:bold;
+top:20px;
+left:80px;
+z-index:2;
+}
+.behind {
+background-color:gold;
+font-size:20px;
+font-weight:bold;
+top:-60px;
+left:35px;
+z-index:1;
+}
+.infront1 {
+background-color:green;
+font-size:20px;
+font-weight:bold;
+top:-200px;
+left:120px;
+z-index:3;
+}
+</style>
+<div class="infront">2</div>
+<div class="behind">1</div>
+<div class="infront1">3</div>
+</html>
